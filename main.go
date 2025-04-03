@@ -41,33 +41,32 @@ const (
 	// MaddyPath is path to your Maddy credentials database
 	//
 	// FYI, Maddy's password database by default is "/var/lib/maddy/credentials.db"
-	MaddyPath = ""
+	MaddyPath = "/var/lib/maddy/credentials.db"
 
 	// HostingURL is your domain name,
 	// for example: `http://localhost:1323/`
-	HostingURL = ""
+	HostingURL = "https://drayageconnection.com"
 
 	// SMTPMailUsername is your full mail address,
 	// for example: `robot@local.host`
-	SMTPMailUsername = ""
+	SMTPMailUsername = "techsupport@drayageconnection.com"
 
 	// SMTPMailPassword is your mailbox password
-	SMTPMailPassword = ""
+	SMTPMailPassword = "KMw!609720$"
 
 	// SMTPMailHostname is your mail hostname,
 	// for example: `mx1.local.host`
-	SMTPMailHostname = ""
+	SMTPMailHostname = "mail.drayageconnection.com"
 
 	// MXServer is your mail `MX` record + `PORT`,
 	// for example: `mx1.local.host:587`
-	MXServer = ""
+	MXServer = "mail.drayageconnection.com:587"
 
 	// EmailFrom is a EmailTemplate's "$FROM" section
-	EmailFrom = ""
+	EmailFrom = "techsupport@drayageconnection.com"
 	// EmailSubject is a EmailTemplate's "$SUBJECT" section
-	EmailSubject = ""
+	EmailSubject = "Your Email Password Reset"
 	// EmailMessage is a EmailTemplate's "$MESSAGE" section
-	//
 	// Remember to provide a password reset link to a user ($RESET_LINK)
 	EmailMessage = "Here's your reset link: $RESET_LINK\r\n"
 	// EmailTemplate is your reset mail message
