@@ -52,7 +52,7 @@ const (
 	SMTPMailUsername = "techsupport@drayageconnection.com"
 
 	// SMTPMailPassword is your mailbox password
-	SMTPMailPassword = "KMw!609720$"
+	SMTPMailPassword = "$*dc2025!ts#$"
 
 	// SMTPMailHostname is your mail hostname,
 	// for example: `mx1.local.host`
