@@ -228,7 +228,7 @@ func main() {
 				msg = strings.ReplaceAll(msg, "$FROM", EmailFrom)
 				msg = strings.ReplaceAll(msg, "$SUBJECT", EmailSubject)
 				msg = strings.ReplaceAll(msg, "$MESSAGE", EmailMessage)
-				msg = strings.ReplaceAll(msg, "$RESET_LINK", HostingURL+"reset/"+random)
+				msg = strings.ReplaceAll(msg, "$RESET_LINK", HostingURL+":1323/reset/"+random)
 
 				err := smtp.SendMail(MXServer, auth, SMTPMailUsername, to, []byte(msg))
 				if err != nil {
@@ -237,7 +237,7 @@ func main() {
 				}
 			} else {
 				log.Println("[SMTP] Debug mode enabled, not sending email")
-				log.Println("[SMTP] Reset link:", HostingURL+"reset/"+random)
+				log.Println("[SMTP] Reset link:", HostingURL+":1323/reset/"+random)
 			}
 		}()
 
