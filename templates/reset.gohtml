@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Сброс пароля</title>
+    <title>Password reset</title>
     <style>
         body {
             padding: 1rem;
@@ -37,20 +37,20 @@
     </style>
 </head>
 <body>
-<h1>Сброс пароля</h1>
+<h1>Drayageconnection.com Email Password reset</h1>
 {{ if .UniqueLinkTriggered }}
-    <p>Напишите здесь ваш новый пароль</p>
+    <p>Type your new password here </p>
     <form action="" method="post">
-        <label for="password">Ваш новый пароль</label>
-        <input type="password" name="password" id="password" placeholder="Введите свой новый пароль">
+        <label for="password">Your new password : </label>
+        <input type="password" name="password" id="password" placeholder="Enter your new password">
     </form>
 {{ else }}
     {{ if .Sent }}
-        <p>Сообщение о сбросе пароля было отправлено, если такой адрес существует.</p>
+        <p>A password reset message has been sent if such an address exists.</p>
     {{ else }}
         <form action="/reset" method="post">
-            <label for="email">Email адрес</label>
-            <input type="email" name="email" id="email" placeholder="Введите свой email адрес">
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email address">
         </form>
     {{ end }}
 {{ end }}
